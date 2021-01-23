@@ -3,7 +3,7 @@ export const sentence = {
     show: {
         opacity: 1,
         transition: {
-            delay: 0.5,
+            delay: 55,
             staggerChildren: 0.05,
         },
     },
@@ -16,5 +16,15 @@ export const letter = {
     show: {
         opacity: 1,
         // y: 0,
+    },
+}
+export const animView = {
+    start: {opacity: 0},
+    end: {
+        opacity: 1,
+        transition: {
+            delay: 0.3,
+            duration: 1,
+        },
     },
 }

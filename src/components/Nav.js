@@ -1,56 +1,75 @@
 import React, {useState, useEffect} from 'react';
 import styled from "styled-components";
-import {Link} from "react-router-dom";
+import {Link,useLocation} from "react-router-dom";
 import {motion} from "framer-motion";
 
-const Nav = ({pathname, currentColors}) => {
+const Nav = () => {
+    const location = useLocation();
+    const currentPath = location.pathname;
+    const [colors, changeColors] = useState({});
+
+    useEffect(() => {
+        console.log(currentPath);
+        if (currentPath === '/contact') {
+            changeColors({background: "#C1C1C1", color: "#6B7176", hover: "#000"})
+        } else if (currentPath === '/about') {
+            changeColors( {background: "#0BE5BC", color: "#6B7176", hover: "#000"})
+        } else if (currentPath === '/projects') {
+            changeColors({background: "#1E1E1E", color: "#c6c6c6", hover: "#ffffff"})
+        } else {
+            changeColors({background: "#fff", color: "#6B7176", hover: "#000"})
+        }
+        // return colors;
+    }, [currentPath]);
+
 
     return (
-        <StyledNav style={{background: `${currentColors.background}`}}>
-            {console.log(currentColors)}
-            <h1><Link to="/" id="logo" style={{color: `${currentColors.hover}`}}>PK</Link></h1>
+        <StyledNav >
+            {console.log(colors)}
+            <h1><Link to="/" id="logo"
+                      style={{color: `${colors.hover}`}}>PK</Link></h1>
             <ul>
                 <li>
-                    <Link to="/about" style={{color: `${currentColors.color}`}}>
+                    <Link to="/about"
+                          style={{color: `${colors.color}`}}>
                         <motion.span
-                            whileHover={{color: `${currentColors.hover}`}}
-                            style={{color: pathname === '/about' ? `${currentColors.hover}` : `${currentColors.color}`}}
+                            style={{color: currentPath === '/about' ? `${colors.hover}` : `${colors.color}`}}
                         >About
                         </motion.span>
-                        <Line style={{background: `${currentColors.hover}`}}
+                        <Line style={{background: `${colors.hover}`}}
                               transition={{duration: 0.75}}
                               initial={{width: "0%"}}
-                              animate={{width: pathname === '/about' ? "100%" : "0%"}}
+                              animate={{width: currentPath === '/about' ? "100%" : "0%"}}
                         />
                     </Link>
                 </li>
                 <li>
-                    <Link to="/projects" style={{color: `${currentColors.color}`}}>
+                    <Link to="/projects"
+                          style={{color: `${colors.color}`}}>
                         <motion.span
-                            whileHover={{color: `${currentColors.hover}`}}
-                            style={{color: pathname === '/projects' ? `${currentColors.hover}` : `${currentColors.color}`}}
+                            style={{color: currentPath === '/projects' ? `${colors.hover}` : `${colors.color}`}}
                         >Projects
                         </motion.span>
 
-                        <Line style={{background: `${currentColors.hover}`}}
+                        <Line style={{background: `${colors.hover}`}}
                               transition={{duration: 0.75}}
                               initial={{width: "0%"}}
-                              animate={{width: pathname === '/projects' ? "100%" : "0%"}}
+                              animate={{width: currentPath === '/projects' ? "100%" : "0%"}}
                         />
                     </Link>
                 </li>
                 <li>
-                    <Link to="/contact" style={{color: `${currentColors.color}`}}>
+                    <Link to="/contact"
+                          style={{color: `${colors.color}`}}>
                         <motion.span
-                            whileHover={{color: `${currentColors.hover}`}}
-                            style={{color: pathname === '/contact' ? `${currentColors.hover}` : `${currentColors.color}`}}
+                            style={{color: currentPath === '/contact' ? `${colors.hover}` : `${colors.color}`}}
                         >Contact
                         </motion.span>
 
-                        <Line style={{background: `${currentColors.hover}`}}
+                        <Line style={{background: `${colors.hover}`}}
                               transition={{duration: 0.75}}
                               initial={{width: "0%"}}
-                              animate={{width: pathname === '/contact' ? "100%" : "0%"}}
+                              animate={{width: currentPath === '/contact' ? "100%" : "0%"}}
                         />
                     </Link>
                 </li>
@@ -59,20 +78,23 @@ const Nav = ({pathname, currentColors}) => {
     );
 };
 
-const StyledNav = styled.nav`
-  min-height: 5vh;
+const StyledNav = styled(motion.nav)`
+  height: 5vh;
   display: flex;
-  margin: auto;
+  //margin: auto;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10rem;
-  //background: bisque;
+  //background: rgba(195, 17, 17, 0.0);
+  background: transparent;
   position: sticky;
   top: 0;
+  //z-index: 10;
   //color: #6B7176;
 
   a {
     //color: #6B7176;
+    text-decoration: none;
   }
 
   ul {
@@ -96,6 +118,7 @@ const Line = styled(motion.div)`
   width: 0%;
   position: absolute;
   bottom: -10%;
+  left: -1%;
   @media (max-width: 1300px) {
     left: 0%;
   }

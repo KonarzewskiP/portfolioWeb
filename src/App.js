@@ -9,38 +9,21 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 //Router
 import {Switch, Route, useLocation} from 'react-router-dom';
+import Frame from "./components/Frame";
+import {AnimatePresence} from "framer-motion";
 //Animation
 
 function App() {
     const location = useLocation();
-    const currentPath = location.pathname;
     //State
-    const [currentColors, setCurrentColors] = useState({
-        /*        background: "",
-                color: "",
-                hover: ""*/
-    });
-
-    useEffect(() => {
-        console.log(currentPath);
-        if (currentPath === '/contact') {
-            setCurrentColors({background: "#C1C1C1", color: "#6B7176", hover: "#000"})
-        } else if (currentPath === '/about') {
-            setCurrentColors( {background: "#0BE5BC", color: "#6B7176", hover: "#000"})
-        } else if (currentPath === '/projects') {
-            setCurrentColors({background: "#1E1E1E", color: "#c6c6c6", hover: "#ffffff"})
-        } else {
-            setCurrentColors({background: "#fff", color: "#6B7176", hover: "#000"})
-        }
-        // return currentColors;
-    }, [currentPath]);
 
     return (
 
         <div className="App">
+
             <GlobalStyle/>
-            <Nav pathname={currentPath} currentColors={currentColors}/>
-            <Switch location={location} key={currentPath}>
+            <AnimatePresence exitBeforeEnter>
+            <Switch location={location} key={location.pathname}>
                 <Route path="/" exact>
                     <MainPage/>
                 </Route>
@@ -54,9 +37,11 @@ function App() {
                     <Contact/>
                 </Route>
             </Switch>
+            </AnimatePresence>
 
         </div>
     );
 }
+
 
 export default App;

@@ -19,7 +19,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     background: #fff;
     font-family: 'Open Sans', sans-serif;
-    //overflow: hidden;
+    overflow: hidden;
+   
   }
 
   h2 {
