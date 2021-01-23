@@ -17,7 +17,7 @@ const Nav = () => {
         } else if (currentPath === '/projects') {
             changeColors({background: "#1E1E1E", color: "#c6c6c6", hover: "#ffffff"})
         } else {
-            changeColors({background: "#fff", color: "#6B7176", hover: "#000"})
+            changeColors({background: "#fff", color: "#6B7176", hover: "#000000"})
         }
         // return colors;
     }, [currentPath]);
@@ -108,7 +108,7 @@ const StyledNav = styled(motion.nav)`
   }
 
   #logo {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
   }

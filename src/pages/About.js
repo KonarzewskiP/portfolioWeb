@@ -4,6 +4,8 @@ import {motion} from "framer-motion";
 import Frame from "../components/Frame";
 import Nav from "../components/Nav";
 import {animView} from "../animations";
+import AboutMeSection from "../components/AboutMeSection";
+import ExperienceSection from "../components/ExperienceSection";
 
 
 const About = () => {
@@ -12,6 +14,8 @@ const About = () => {
             <Frame/>
             <Nav/>
             <AboutStyled>
+                <AboutMeSection/>
+                <ExperienceSection/>
             </AboutStyled>
         </motion.div>
     );
@@ -19,19 +23,15 @@ const About = () => {
 
 const AboutStyled = styled(motion.div)`
   min-height: 100vh;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: space-between;
   padding: 5rem 10rem;
   background: #0BE5BC;
   background-size: cover;
   margin-top: -5vh;
+  //overflow-y: scroll;
   //z-index: 2;
-`
-
-const startFrame = styled(motion.div)`
-  background: greenyellow;
-  //z-index: 101;
 `
 
 export default About;
