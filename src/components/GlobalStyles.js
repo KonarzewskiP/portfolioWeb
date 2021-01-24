@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
   h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
 `

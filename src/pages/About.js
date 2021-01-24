@@ -6,6 +6,7 @@ import Nav from "../components/Nav";
 import {animView} from "../animations";
 import AboutMeSection from "../components/AboutMeSection";
 import ExperienceSection from "../components/ExperienceSection";
+import RandomFacts from "../components/RandomFacts";
 
 
 const About = () => {
@@ -16,6 +17,7 @@ const About = () => {
             <AboutStyled>
                 <AboutMeSection/>
                 <ExperienceSection/>
+                <RandomFacts/>
             </AboutStyled>
         </motion.div>
     );
