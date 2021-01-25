@@ -2,6 +2,7 @@ import {v4 as uuidv4} from 'uuid';
 //Import Images
 import Crypto from "../img/projects/Cryptocurrency.png";
 import Cashpoint from "../img/projects/Cashpoint.png"
+import Portfolio from "../img/projects/Portfolio.png"
 
 const ProjectsData = () => {
     return [
@@ -36,22 +37,19 @@ const ProjectsData = () => {
             image: Cashpoint,
         },
         {
-            name: "Cryptocurrency Wallet",
+            name: "Portfolio Website",
             id: uuidv4(),
-            description: "Cryptocurrency wallet is a final project of Java software development bootcamp. This app fetches" +
-                "exchange rates from external REST API, consume JSON and enable registered users to buy or sell" +
-                "cryptocurrencies.",
-            gitHubLink: "https://github.com/ProjektGrupowyJavalon3/Cryptocurrencywallet",
+            description: "My portfolio website, which I build using React JS, Styled components and Framer " +
+                "Motion framework. ",
+            gitHubLink: "https://github.com/KonarzewskiP/portfolioWeb",
             technology: [
-                "Spring Boot",
-                "Spring Security",
-                "Junit 5",
-                "Mockito",
+                "HTML",
+                "Styled components",
                 "JavaScript",
-                "MySQL",
-                "Hibernate",
+                "React JS",
+                "Framer Motion",
             ],
-            image: Crypto,
+            image: Portfolio,
         },
         {
             name: "Cashpoint",
