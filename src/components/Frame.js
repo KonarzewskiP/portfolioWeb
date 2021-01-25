@@ -1,20 +1,8 @@
 import React from 'react';
 import {motion} from "framer-motion";
 import styled from "styled-components";
+import {slider} from "../animations";
 
-const slider = {
-    hidden: {
-        y: '0%',
-        width: "500%"
-        /*, skew: "45deg"*/
-    },
-    show: {
-        y: "-130%",
-
-        // skew: "0deg",
-        transition: {ease: "easeIn", duration: 1}
-    }
-}
 
 const Frame = () => {
 

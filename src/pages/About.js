@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {motion} from "framer-motion";
 import Frame from "../components/Frame";
 import Nav from "../components/Nav";
-import {animView} from "../animations";
+import {animateView} from "../animations";
 import AboutMeSection from "../components/AboutMeSection";
 import ExperienceSection from "../components/ExperienceSection";
 import RandomFacts from "../components/RandomFacts";
@@ -11,7 +11,7 @@ import RandomFacts from "../components/RandomFacts";
 
 const About = () => {
     return (
-        <motion.div variants={animView} initial="start" animate="end" exit="start">
+        <motion.div variants={animateView} initial="start" animate="end" exit="start">
             <Frame/>
             <Nav/>
             <AboutStyled>
@@ -34,6 +34,8 @@ const AboutStyled = styled(motion.div)`
   margin-top: -5vh;
   //overflow-y: scroll;
   //z-index: 2;
+
+
 `
 
 export default About;

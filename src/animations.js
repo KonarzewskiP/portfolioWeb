@@ -3,28 +3,54 @@ export const sentence = {
     show: {
         opacity: 1,
         transition: {
-            delay: 55,
-            staggerChildren: 0.05,
+            staggerChildren: 0.04,
         },
     },
 }
 export const letter = {
     hidden: {
         opacity: 0,
-        // y: 50
     },
     show: {
         opacity: 1,
-        // y: 0,
     },
 }
-export const animView = {
-    start: {opacity: 0},
-    end: {
+export const animateView = {
+    hidden: {opacity: 0},
+    show: {
         opacity: 1,
         transition: {
-            delay: 0.3,
+            // delay: 4,
             duration: 1,
+            staggerChildren: 4
         },
     },
+}
+
+export const animateTitle = {
+    hidden: {
+        opacity: 0,
+        y: 200
+    },
+    show: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: 0.75,
+            ease: "easeOut"
+        }
+    }
+}
+export const slider = {
+    hidden: {
+        y: '0%',
+        width: "500%"
+        /*, skew: "45deg"*/
+    },
+    show: {
+        y: "-130%",
+
+        // skew: "0deg",
+        transition: {ease: "easeIn", duration: 1}
+    }
 }

@@ -51,18 +51,7 @@ const ProjectsData = () => {
             ],
             image: Portfolio,
         },
-        {
-            name: "Cashpoint",
-            id: uuidv4(),
-            description: "Cashpoint is a simple simulator of ATM machine. The app is using two CSV files to read account and user" +
-                "details. Projects was implemented using Java and Command Design Pattern.",
-            gitHubLink: "https://github.com/KonarzewskiP/cashpoint",
-            technology: [
-                "Java",
-                "Junit 5",
-            ],
-            image: Cashpoint,
-        },
+
     ]
 };
 
