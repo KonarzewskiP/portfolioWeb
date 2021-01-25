@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 import {Switch, Route, useLocation} from 'react-router-dom';
 import Frame from "./components/Frame";
 import {AnimatePresence} from "framer-motion";
+import ScrollToTop from "./components/ScrollToTop";
 //Animation
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
 
             <GlobalStyle/>
             <AnimatePresence exitBeforeEnter>
+                <ScrollToTop/>
             <Switch location={location} key={location.pathname}>
                 <Route path="/" exact>
                     <MainPage/>

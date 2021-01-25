@@ -1,18 +1,19 @@
 import React, {useState, useEffect} from 'react';
 import styled from "styled-components";
-import {Link,useLocation} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import {motion} from "framer-motion";
 
 const Nav = () => {
     const location = useLocation();
     const currentPath = location.pathname;
     const [colors, changeColors] = useState({});
+    const [navSolid, setNavSolid] = useState(false);
 
     useEffect(() => {
         if (currentPath === '/contact') {
             changeColors({background: "#C1C1C1", color: "#6B7176", hover: "#000"})
         } else if (currentPath === '/about') {
-            changeColors( {background: "#0BE5BC", color: "#6B7176", hover: "#000"})
+            changeColors({background: "#0BE5BC", color: "#6B7176", hover: "#000"})
         } else if (currentPath === '/projects') {
             changeColors({background: "#1E1E1E", color: "#c6c6c6", hover: "#ffffff"})
         } else {
@@ -21,9 +22,18 @@ const Nav = () => {
         // return colors;
     }, [currentPath]);
 
+    const changeBackground = () => {
+        if (window.scrollY >= 50) {
+            setNavSolid(true);
+        } else {
+            setNavSolid(false);
+        }
+    }
+
+    window.addEventListener('scroll', changeBackground);
 
     return (
-        <StyledNav >
+        <StyledNav style={{background: navSolid ? `${colors.background}` : "transparent"}}>
             <h1><Link to="/" id="logo"
                       style={{color: `${colors.hover}`}}>PK</Link></h1>
             <ul>
@@ -87,7 +97,7 @@ const StyledNav = styled(motion.nav)`
   background: transparent;
   position: sticky;
   top: 0;
-  //z-index: 10;
+  z-index: 10;
   //color: #6B7176;
 
   a {
