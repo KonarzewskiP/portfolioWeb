@@ -38,9 +38,7 @@ const Contact = () => {
 };
 
 const StyledContacts = styled(motion.div)`
-  //min-height: 100vh;
   padding: 5rem 10rem;
-  //color: #23d997;
   color: #565656;
   background: #e5e5e5;
   margin-top: -5vh;
@@ -52,9 +50,6 @@ const StyledContacts = styled(motion.div)`
     color: #000000;
   }
 
-  img {
-    
-  }
 `
 
 const StyledContact = styled.div`
@@ -90,14 +85,9 @@ const StyledContactInfo = styled.div`
     color: #000000;
     text-align: center;
   }
-
-
 `
 
 const StyledImage = styled.div`
-  //border: 2px solid yellow;
-  padding-top: 0;
-
   img {
     height: 600px;
     @media (max-width: 800px) {
