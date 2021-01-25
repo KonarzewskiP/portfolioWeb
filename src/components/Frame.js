@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {motion} from "framer-motion";
 import styled from "styled-components";
 
@@ -13,29 +13,6 @@ const slider = {
 
         // skew: "0deg",
         transition: {ease: "easeIn", duration: 1}
-    }
-}
-
-const slider2 = {
-    hidden: {
-        opacity: 1
-    },
-    show: {
-        opacity: 0,
-        transition: {
-            duration: 5
-        }
-    }
-}
-
-const sliderContainer = {
-    hidden: {opacity: 1},
-    show: {
-        opacity: 1,
-        transition: {
-            staggerChildren: 0.10,
-            ease: "easeOut",
-        }
     }
 }
 

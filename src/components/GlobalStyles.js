@@ -7,19 +7,19 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-  
-  a{
+
+  a {
     text-decoration: none;
   }
-  
-  ul{
+
+  ul {
     list-style: none;
   }
 
   body {
     background: #fff;
     font-family: 'Open Sans', sans-serif;
-   
+    overflow-x: hidden;
   }
 
   h2 {

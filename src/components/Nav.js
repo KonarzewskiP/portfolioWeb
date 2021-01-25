@@ -9,7 +9,6 @@ const Nav = () => {
     const [colors, changeColors] = useState({});
 
     useEffect(() => {
-        console.log(currentPath);
         if (currentPath === '/contact') {
             changeColors({background: "#C1C1C1", color: "#6B7176", hover: "#000"})
         } else if (currentPath === '/about') {
@@ -25,7 +24,6 @@ const Nav = () => {
 
     return (
         <StyledNav >
-            {console.log(colors)}
             <h1><Link to="/" id="logo"
                       style={{color: `${colors.hover}`}}>PK</Link></h1>
             <ul>

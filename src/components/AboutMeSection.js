@@ -33,7 +33,7 @@ const StyledAboutMe = styled.div`
   //overflow: hidden;
   display: flex;
   padding: 3rem 12rem;
-  //color: black;
+  color: black;
   //align-items: center;
 
   h2 {
