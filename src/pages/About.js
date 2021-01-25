@@ -28,12 +28,10 @@ const AboutStyled = styled(motion.div)`
   display: block;
   align-items: center;
   justify-content: space-between;
-  padding: 5rem 10rem;
+  padding: 5rem 0;
   background: #0BE5BC;
   background-size: cover;
   margin-top: -5vh;
-  //overflow-y: scroll;
-  //z-index: 2;
 
 
 `

@@ -17,21 +17,38 @@ const RandomFacts = () => {
 const StyledRandomFacts = styled.div`
   display: flex;
   align-items: center;
-
+  justify-content: center;
+  text-align: center;
   h4 {
-    text-align: center;
-    padding-bottom: 4rem ;
+    padding-bottom: 2rem;
+    @media (max-width: 1100px) {
+      font-size: 2.5rem;
+    }
+    @media (max-width: 800px) {
+      font-size: 1.8rem;
+      //padding: 2rem 0;
+    }
   }
   p{
-    text-align: center;
-    padding: 1rem;
-    font-size: 2rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
+    @media (max-width: 1100px) {
+      font-size: 1.7rem;
+    }
+    @media (max-width: 800px) {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
   }
 `
 
 const RandomFact = styled.div`
-  flex: 1;
+  width: 1000px;
+  @media (max-width: 1100px) {
+    width: 700px;
+  }
+  @media (max-width: 800px) {
+    width:480px;
+  }
 
 
 `

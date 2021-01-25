@@ -15,6 +15,9 @@ const GlobalStyle = createGlobalStyle`
   ul {
     list-style: none;
   }
+  p{
+    font-size: 2rem;
+  }
 
   body {
     background: #fff;

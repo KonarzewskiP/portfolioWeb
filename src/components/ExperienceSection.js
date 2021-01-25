@@ -18,7 +18,7 @@ import {Link} from "react-router-dom";
 
 const ExperienceSection = () => {
     return (
-        <StyledMainDiv>
+        <StyledExperience>
             <TechnicalSkills>
                 <h4>Technical Skills</h4>
                 <Icons>
@@ -83,64 +83,75 @@ const ExperienceSection = () => {
                             <motion.img src={thymeleaf} alt="react logo" whileHover={{scale: 1.2}} />
                         </div>
                     </Icon>
-                </Icons>
+
                 <h3>To see my skills in action, check out my <Link to="/projects"  ><motion.span whileHover={{scale: 1.2,color: "#fff"}}>projects.</motion.span></Link></h3>
-            </TechnicalSkills>
-        </StyledMainDiv>
+                </Icons>
+                </TechnicalSkills>
+        </StyledExperience>
     );
 };
 
-const StyledMainDiv = styled.div`
+const StyledExperience = styled.div`
   display: flex;
-  //height: 100vh;
-  //width: 100%;
-  overflow: hidden;
+  justify-content: center;
+  text-align: center;
 
   h4 {
-    text-align: center;
-    padding: 4rem 0;
+    padding: 2rem;
+    @media (max-width: 1100px) {
+      font-size: 2.5rem;
+    }
+    @media (max-width: 800px) {
+      font-size: 1.8rem;
+      //padding: 2rem 0;
+    }
   }
   
   h3 { 
     padding: 4rem 0;
-    text-align: center;
     font-size: 2rem;
-    //font-weight: lighter;
+    
+    @media (max-width: 800px) {
+      font-size: 1.5rem;
+      //padding: 2rem 0;
+    }
   }
 `
 
 const TechnicalSkills = styled.div`
-  flex: 1;
-  background: transparent;
-  overflow: hidden;
-  
   a {
     text-decoration: underline;
     color: #000;
   }
 `
-
 const Icons = styled(motion.div)`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  //width: 12.5%;
-
-  img {
-    width: 100%;
-    height: 100px;
-    margin: 7px;
+  width: 1000px;
+  
+  @media (max-width: 1100px) {
+    width: 700px;
+    margin: auto;
+  }
+  @media (max-width: 800px) {
+    width: 500px;
+    margin: auto;
   }
 
+  img {
+    height: 100px;
+    margin: 7px;
+    @media (max-width: 800px) {
+      height: 80px;
+    }
+  }
 `
 
 const Icon = styled.div`
+  justify-content: center;
   padding: 1rem;
 
-  .logo {
-    display: flex;
-
-  }
 `
 
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import {motion} from "framer-motion";
 import styled from "styled-components";
 
 const AboutMeSection = () => {
@@ -28,29 +27,44 @@ const AboutMeSection = () => {
 };
 
 const StyledAboutMe = styled.div`
-  //min-height: 60vh;
-  //width: 100%;
-  //overflow: hidden;
+  text-align: center;
   display: flex;
-  padding: 3rem 12rem;
+  justify-content: center;
+  padding: 3rem 0;
   color: black;
-  //align-items: center;
 
   h2 {
-    text-align: center;
     padding-bottom: 4rem;
+    @media (max-width: 1100px) {
+      font-size: 3rem;
+      padding-bottom: 3rem;
+    }
+    @media (max-width: 800px) {
+      font-size: 2rem;
+      padding-bottom: 2rem;
+    }
   }
 
   p {
-    text-align: center;
-    padding: 1rem;
-    font-size: 2rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
+    @media (max-width: 1100px) {
+      font-size: 1.7rem;
+    }
+    @media (max-width: 800px) {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
   }
 `
 
 const StyledAbout = styled.div`
-  flex: 1;
+  width: 1000px;
+  @media (max-width: 1100px) {
+    width: 700px;
+  }
+  @media (max-width: 800px) {
+    width:480px;
+  }
 `
 
 export default AboutMeSection;
