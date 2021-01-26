@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import mySQL from '../img/mySQL_1.png'
 import gitLogo from '../img/git_small_1.png';
-import {Link} from "react-router-dom";
 import {motion} from "framer-motion";
 
 const ProjectComponent = ({project}) => {
@@ -12,7 +10,7 @@ const ProjectComponent = ({project}) => {
                 <Test>
                     <h4>{`${project.name}`}</h4>
                     <p>{`${project.description}`}</p>
-                    <a href={project.gitHubLink}><img src={gitLogo} alt="GitHub logo"/></a>
+                    <a href={project.gitHubLink} target="_blank" rel="noreferrer"><img src={gitLogo} alt="GitHub logo"/></a>
                 </Test>
             </StyledInfo>
             <StyledInfo>
@@ -30,15 +28,8 @@ const ProjectComponent = ({project}) => {
     );
 };
 const StyledProject = styled.div`
-  //min-height: 50vh;
-  
-  //flex-wrap: wrap;
   padding: 2rem 0;
-  //margin: auto;
-  //display: flex;
   text-align: center;
-  //align-items: center;
-  //justify-content: center;
   @media (min-width: 1100px) {
     display: flex;
     flex-wrap: wrap;
@@ -94,11 +85,6 @@ const Test = styled.div`
     }
   }
 `
-
-
-
-
-
 const Shadow = styled(motion.div)`
   position: relative;
 
@@ -135,7 +121,6 @@ const StyledOverlay = styled(motion.div)`
   p {
     line-height: 3rem;
   }
-
 `
 
 export default ProjectComponent;

@@ -1,15 +1,13 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 //Global style
 import GlobalStyle from "./components/GlobalStyles";
 //Import Pages
 import MainPage from "./pages/MainPage";
-import Nav from "./components/Nav";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 //Router
 import {Switch, Route, useLocation} from 'react-router-dom';
-import Frame from "./components/Frame";
 import {AnimatePresence} from "framer-motion";
 import ScrollToTop from "./components/ScrollToTop";
 //Animation

@@ -6,9 +6,9 @@ const RandomFacts = () => {
         <StyledRandomFacts>
             <RandomFact>
                 <h4>3 random facts about me:</h4>
-                <p>1. I used to dance professionally for 4 years and once me and my team won Polish Championships.</p>
-                <p>2. When I was younger, I wanted to be a professional skateboarder. In fact I used to skate for 6 years.</p>
-                <p>3. On my free time, I learn how to play bass guitar, read books and train boxing.</p>
+                <p>1. I used to dance professionally for four years and once the team I was on won Polish Championship.</p>
+                <p>2. When I was younger, I wanted to become a professional skateboarder. In fact, I used to skate for 6 years.</p>
+                <p>3. In my free time, I am learning to play the bass guitar, I enjoy reading books and I train boxing.</p>
             </RandomFact>
         </StyledRandomFacts>
     );

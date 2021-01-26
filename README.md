@@ -1,3 +1,7 @@
+Hi! This is the source code for my portfolio website, which I build using React Framer Motion and Styled Components.  
+
+http://pkonarzewski.com/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

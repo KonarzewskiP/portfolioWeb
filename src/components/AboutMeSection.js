@@ -6,19 +6,15 @@ const AboutMeSection = () => {
         <StyledAboutMe>
             <StyledAbout>
                 <h2>About me</h2>
-                <p> My name is Pawel, and I am Junior Full Stack Developer based in London. I am currently looking for
-                    professional development opportunity that match my interest and competencies. My goal is to make
-                    use of my knowledge and skills, connecting the next stages of my professional career with your
-                    company.
+                <p> My name is Pawel, and I am a Junior Full Stack Developer based in London. I am currently looking
+                    for a new career opportunity which allow me to fully utilise my knowledge and skills,
+                    and further grow and develop my programming abilities.
                 </p>
                 <br/>
                 <p>
-                    I possess highly-developed analytical and interpersonal skills and I adapt to new conditions quickly
-                    and very well.
-                    I constantly develop my programing skills through online courses, tech blogs and private classes
-                    with Tutor.
-                    My ambition is to join a team in which I could make use of the skills that i possess while having
-                    the opportunity to develop alongside more experienced developers.
+                    I possess highly-developed analytical and interpersonal skills, and I adapt to new conditions
+                    quickly and easily. I constantly develop my programming skills through online courses, tech blogs
+                    and private classes with a tutor. My aim is to become a professional developer and create fully usable and secure software.
                 </p>
             </StyledAbout>
         </StyledAboutMe>
@@ -29,7 +25,7 @@ const StyledAboutMe = styled.div`
   text-align: center;
   display: flex;
   justify-content: center;
-  padding: 3rem 0;
+  padding: 3rem 1rem;
   color: black;
 
   h2 {
@@ -46,7 +42,6 @@ const StyledAboutMe = styled.div`
 
   p {
     line-height: 2.5rem;
-    //font-size: 1.5rem;
     text-align: left;
     font-weight: lighter;
     @media (max-width: 800px) {

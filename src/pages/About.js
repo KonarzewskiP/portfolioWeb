@@ -1,9 +1,11 @@
 import React from 'react';
 import styled from "styled-components";
+//Animations
 import {motion} from "framer-motion";
 import Frame from "../components/Frame";
-import Nav from "../components/Nav";
 import {animateView} from "../animations";
+//Import Pages
+import Nav from "../components/Nav";
 import AboutMeSection from "../components/AboutMeSection";
 import ExperienceSection from "../components/ExperienceSection";
 import RandomFacts from "../components/RandomFacts";

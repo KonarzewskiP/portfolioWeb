@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from "styled-components";
 import {Link} from "react-router-dom";
+//Import Animations
 import {motion} from "framer-motion";
 import {sentence, letter, animateView, animateTitle} from "../animations";
+//Import Pages
 import Nav from "../components/Nav";
 
 const MainPage = () => {
@@ -56,14 +58,13 @@ const StyledAbout = styled(motion.div)`
   text-align: left;
   padding: 15rem 10rem;
   color: #23d997;
-  //color: #3bf6d4;
   margin-top: -5vh;
 
   @media (max-width: 1100px) {
     padding: 13rem 6rem;
   }
   @media (max-width: 800px) {
-    padding: 10rem 3rem;
+    padding: 10rem 2rem;
   }
   
   h2 {
@@ -91,6 +92,7 @@ const StyledAbout = styled(motion.div)`
     }
     @media (max-width: 800px) {
       font-size: 1.1rem;
+      padding-right: 2rem;
     }
   }
 `

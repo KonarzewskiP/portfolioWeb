@@ -9,12 +9,11 @@ const ProjectsData = () => {
         {  name: "Portfolio Website",
             id: uuidv4(),
             description: "My portfolio website, which I build using React JS, Styled components and Framer " +
-                "Motion framework. ",
+                "Motion library. ",
             gitHubLink: "https://github.com/KonarzewskiP/portfolioWeb",
             technology: [
                 "HTML",
                 "Styled components",
-                "JavaScript",
                 "React JS",
                 "Framer Motion",
             ],
@@ -24,7 +23,7 @@ const ProjectsData = () => {
         {
             name: "Cashpoint",
             id: uuidv4(),
-            description: "Cashpoint is a simple ATM simulator. The app is using two CSV files to read account and user" +
+            description: "Cashpoint is a simple ATM simulator. The app is using two CSV files to read accounts and user " +
                 "details. Projects was implemented using Java and Command Design Pattern.",
             gitHubLink: "https://github.com/KonarzewskiP/cashpoint",
             technology: [
