@@ -103,7 +103,6 @@ const StyledExperience = styled.div`
     }
     @media (max-width: 800px) {
       font-size: 1.8rem;
-      //padding: 2rem 0;
     }
   }
   
@@ -113,7 +112,6 @@ const StyledExperience = styled.div`
     
     @media (max-width: 800px) {
       font-size: 1.5rem;
-      //padding: 2rem 0;
     }
   }
 `

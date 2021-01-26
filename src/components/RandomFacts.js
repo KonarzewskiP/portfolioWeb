@@ -6,9 +6,9 @@ const RandomFacts = () => {
         <StyledRandomFacts>
             <RandomFact>
                 <h4>3 random facts about me:</h4>
-                <p>1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, provident!</p>
-                <p>2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, provident!</p>
-                <p>3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, provident!</p>
+                <p>1. I come from Poland.</p>
+                <p>2. When I was younger, I wanted to be a professional skateboarder. In fact I used to skate for 6 years.</p>
+                <p>3. On my free time, I learn how to play bass guitar, read books and train boxing.</p>
             </RandomFact>
         </StyledRandomFacts>
     );
@@ -19,6 +19,7 @@ const StyledRandomFacts = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
+
   h4 {
     padding-bottom: 2rem;
     @media (max-width: 1100px) {
@@ -26,10 +27,11 @@ const StyledRandomFacts = styled.div`
     }
     @media (max-width: 800px) {
       font-size: 1.8rem;
-      //padding: 2rem 0;
     }
   }
-  p{
+
+  p {
+    padding: 1rem 0;
     line-height: 2.5rem;
     @media (max-width: 1100px) {
       font-size: 1.7rem;
@@ -47,10 +49,8 @@ const RandomFact = styled.div`
     width: 700px;
   }
   @media (max-width: 800px) {
-    width:480px;
+    width: 460px;
   }
-
-
 `
 
 export default RandomFacts;

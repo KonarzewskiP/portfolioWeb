@@ -7,8 +7,7 @@ const AboutMeSection = () => {
             <StyledAbout>
                 <h2>About me</h2>
                 <p> My name is Pawel, and I am Junior Full Stack Developer based in London. I am currently looking for
-                    an
-                    opportunity to join a team of experienced developers and build great software together.
+                    an opportunity to join a team of experienced developers and build great software together.
                 </p>
                 <p>
                     I started learning computer programing at 2019 and since then i develop passion for creating
@@ -63,7 +62,7 @@ const StyledAbout = styled.div`
     width: 700px;
   }
   @media (max-width: 800px) {
-    width:480px;
+    width: 460px;
   }
 `
 

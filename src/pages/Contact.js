@@ -23,8 +23,8 @@ const Contact = () => {
                             Feel free to send me an email
                             <span> pawelkonarzewski13@gmail.com </span>or connect and message me on:
                         </p>
-                        <a href="/"><img src={git} alt="git logo"/></a>
-                        <a href="/"><img src={linkedIn} alt="linked in logo"/></a>
+                        <a href="https://github.com/KonarzewskiP"><img src={git} alt="git logo"/></a>
+                        <a href="https://www.linkedin.com/in/pawe%C5%82-konarzewski-181617194/"><img src={linkedIn} alt="linked in logo"/></a>
                     </StyledContactInfo>
                 </StyledContact>
                 <StyledContact>
@@ -48,6 +48,10 @@ const StyledContacts = styled(motion.div)`
     display: flex;
     justify-content: center;
     color: #000000;
+    @media (max-width: 1100px) {
+      font-size: 3rem;
+      //padding-bottom: 3rem;
+    }
   }
 
 `

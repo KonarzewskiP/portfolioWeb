@@ -28,14 +28,29 @@ const Projects = () => {
 };
 
 const StyledProjects = styled(motion.div)`
-  min-height: 100vh;
-  //display: flex;
+  //min-height: 100vh;
   align-items: center;
-  justify-content: space-between;
-  padding: 5rem 10rem;
+  //justify-content: space-between;
+  padding: 5rem 0;
   color: #fff;
   background: #1E1E1E;
   margin-top: -5vh;
+  
+
+  h2 {
+    @media (min-width: 1100px) {
+      padding-left: 10rem;
+      
+    }
+    @media (max-width: 1100px) {
+      display: flex;
+      justify-content: center;
+      font-size: 3rem;
+    }
+    @media (max-width: 800px) {
+      font-size: 2rem;
+    }
+  }
 `
 
 
