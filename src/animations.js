@@ -22,7 +22,7 @@ export const animateView = {
         transition: {
             // delay: 4,
             duration: 1,
-            staggerChildren: 4
+            staggerChildren: 2.5
         },
     },
 }

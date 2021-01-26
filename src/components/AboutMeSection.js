@@ -7,18 +7,18 @@ const AboutMeSection = () => {
             <StyledAbout>
                 <h2>About me</h2>
                 <p> My name is Pawel, and I am Junior Full Stack Developer based in London. I am currently looking for
-                    an opportunity to join a team of experienced developers and build great software together.
+                    professional development opportunity that match my interest and competencies. My goal is to make
+                    use of my knowledge and skills, connecting the next stages of my professional career with your
+                    company.
                 </p>
+                <br/>
                 <p>
-                    I started learning computer programing at 2019 and since then i develop passion for creating
-                    software.
-                    I started learning computer programing at 2019 and since then i develop passion for creating
-                    software.
-                </p>
-                <p>
-                    I Spend my time designing experiances for mobile and web applications, creating helpful
-                    illustrations,
-                    and writing desing code to bring my work to life.
+                    I possess highly-developed analytical and interpersonal skills and I adapt to new conditions quickly
+                    and very well.
+                    I constantly develop my programing skills through online courses, tech blogs and private classes
+                    with Tutor.
+                    My ambition is to join a team in which I could make use of the skills that i possess while having
+                    the opportunity to develop alongside more experienced developers.
                 </p>
             </StyledAbout>
         </StyledAboutMe>
@@ -46,9 +46,9 @@ const StyledAboutMe = styled.div`
 
   p {
     line-height: 2.5rem;
-    @media (max-width: 1100px) {
-      font-size: 1.7rem;
-    }
+    //font-size: 1.5rem;
+    text-align: left;
+    font-weight: lighter;
     @media (max-width: 800px) {
       font-size: 1.5rem;
       line-height: 2rem;

@@ -12,7 +12,6 @@ import hibernate from '../img/Hibernate_1.png'
 import git from '../img/Git_1.png'
 import bootstrap from '../img/Bootstrap_1.png'
 import spring2 from '../img/spring_2.png'
-import thymeleaf from '../img/thymeleaf_1.png'
 import {motion} from "framer-motion";
 import {Link} from "react-router-dom";
 
@@ -76,11 +75,6 @@ const ExperienceSection = () => {
                     <Icon>
                         <div className="logo">
                             <motion.img src={bootstrap} alt="react logo" whileHover={{scale: 1.2}}/>
-                        </div>
-                    </Icon>
-                    <Icon>
-                        <div className="logo">
-                            <motion.img src={thymeleaf} alt="react logo" whileHover={{scale: 1.2}} />
                         </div>
                     </Icon>
 

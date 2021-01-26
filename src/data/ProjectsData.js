@@ -6,6 +6,33 @@ import Portfolio from "../img/projects/Portfolio.png"
 
 const ProjectsData = () => {
     return [
+        {  name: "Portfolio Website",
+            id: uuidv4(),
+            description: "My portfolio website, which I build using React JS, Styled components and Framer " +
+                "Motion framework. ",
+            gitHubLink: "https://github.com/KonarzewskiP/portfolioWeb",
+            technology: [
+                "HTML",
+                "Styled components",
+                "JavaScript",
+                "React JS",
+                "Framer Motion",
+            ],
+            image: Portfolio,
+
+        },
+        {
+            name: "Cashpoint",
+            id: uuidv4(),
+            description: "Cashpoint is a simple ATM simulator. The app is using two CSV files to read account and user" +
+                "details. Projects was implemented using Java and Command Design Pattern.",
+            gitHubLink: "https://github.com/KonarzewskiP/cashpoint",
+            technology: [
+                "Java",
+                "Junit 5",
+            ],
+            image: Cashpoint,
+        },
         {
             name: "Cryptocurrency Wallet",
             id: uuidv4(),
@@ -23,33 +50,6 @@ const ProjectsData = () => {
                 "Hibernate",
             ],
             image: Crypto,
-        },
-        {
-            name: "Cashpoint",
-            id: uuidv4(),
-            description: "Cashpoint is a simple ATM simulator. The app is using two CSV files to read account and user" +
-                "details. Projects was implemented using Java and Command Design Pattern.",
-            gitHubLink: "https://github.com/KonarzewskiP/cashpoint",
-            technology: [
-                "Java",
-                "Junit 5",
-            ],
-            image: Cashpoint,
-        },
-        {
-            name: "Portfolio Website",
-            id: uuidv4(),
-            description: "My portfolio website, which I build using React JS, Styled components and Framer " +
-                "Motion framework. ",
-            gitHubLink: "https://github.com/KonarzewskiP/portfolioWeb",
-            technology: [
-                "HTML",
-                "Styled components",
-                "JavaScript",
-                "React JS",
-                "Framer Motion",
-            ],
-            image: Portfolio,
         },
 
     ]

@@ -8,8 +8,7 @@ import Nav from "../components/Nav";
 const MainPage = () => {
     const part1 = "Hi there, I'm ";
     const name = "Pawel Konarzewski. ";
-    const part2 = "Full stack developer. Recent graduate of ";
-    const part3 = "Software Development Bootcamp.";
+    const part2 = "Full stack developer. ";
     return (
         <motion.div variants={animateView} initial="hidden" animate="show" exit="hidden">
             <Nav/>
@@ -39,14 +38,7 @@ const MainPage = () => {
                                             {char}
                                         </motion.span>
                                     )
-                                })}{
-                            part3.split("").map((char, index) => {
-                                return (
-                                    <motion.span key={char + "-" + index} variants={letter}>
-                                        {char}
-                                    </motion.span>
-                                )
-                            })}
+                                })}
                         </motion.h2>
                 <br/>
                     <motion.p variants={animateTitle}>To find more about me go to
@@ -93,7 +85,6 @@ const StyledAbout = styled(motion.div)`
     @media (max-width: 1430px) {
       font-size: 1.5rem;
     }
-
     @media (max-width: 1150px) {
       font-size: 1.3rem;
     }

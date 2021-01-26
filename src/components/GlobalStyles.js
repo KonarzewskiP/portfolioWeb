@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
   p{
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   body {
