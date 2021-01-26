@@ -13,7 +13,7 @@ const Nav = () => {
         if (currentPath === '/contact') {
             changeColors({background: "#C1C1C1", color: "#6B7176", hover: "#000"})
         } else if (currentPath === '/about') {
-            changeColors({background: "#0BE5BC", color: "#6B7176", hover: "#000"})
+            changeColors({background: "#3bf6d4", color: "#6B7176", hover: "#000"})
         } else if (currentPath === '/projects') {
             changeColors({background: "#1E1E1E", color: "#c6c6c6", hover: "#ffffff"})
         } else {
@@ -89,20 +89,19 @@ const Nav = () => {
 const StyledNav = styled(motion.nav)`
   height: 5vh;
   display: flex;
-  //margin: auto;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10rem;
-  //background: rgba(195, 17, 17, 0.0);
   background: transparent;
   position: sticky;
   top: 0;
   z-index: 10;
-  //color: #6B7176;
 
-  a {
-    //color: #6B7176;
-    text-decoration: none;
+  @media (max-width: 1100px) {
+    padding:  1rem 5rem;
+  }
+  @media (max-width: 800px) {
+   padding:  1rem 2rem;
   }
 
   ul {
@@ -110,9 +109,14 @@ const StyledNav = styled(motion.nav)`
   }
 
   li {
-    padding-top: 1rem;
     margin-left: 5rem;
     position: relative;
+    @media (max-width: 1100px) {
+      margin-left: 4rem;
+    }
+    @media (max-width: 800px) {
+      margin-left: 2rem;
+    }
   }
 
   #logo {
@@ -123,12 +127,12 @@ const StyledNav = styled(motion.nav)`
 `
 const Line = styled(motion.div)`
   height: 0.1rem;
-  width: 0%;
+  width: 0;
   position: absolute;
   bottom: -10%;
   left: -1%;
   @media (max-width: 1300px) {
-    left: 0%;
+    left: 0;
   }
 `
 

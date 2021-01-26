@@ -29,7 +29,7 @@ const AboutStyled = styled(motion.div)`
   align-items: center;
   justify-content: space-between;
   padding: 5rem 0;
-  background: #0BE5BC;
+  background: #3bf6d4;
   background-size: cover;
   margin-top: -5vh;
 

@@ -56,6 +56,7 @@ const StyledAbout = styled(motion.div)`
   text-align: left;
   padding: 15rem 10rem;
   color: #23d997;
+  //color: #3bf6d4;
   margin-top: -5vh;
 
   @media (max-width: 1100px) {
