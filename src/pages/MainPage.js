@@ -99,8 +99,7 @@ const StyledAbout = styled(motion.div)`
 const StyledInfo = styled(motion.div)`
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  min-width: 400px;
+  width: 90%;
 `
 
 const StyledSpan = styled(motion.span)`

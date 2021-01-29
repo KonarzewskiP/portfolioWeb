@@ -12,7 +12,7 @@ const Nav = () => {
 
     useEffect(() => {
         if (currentPath === '/contact') {
-            changeColors({background: "#C1C1C1", color: "#6B7176", hover: "#000"})
+            changeColors({background: "#e5e5e5", color: "#6B7176", hover: "#000"})
         } else if (currentPath === '/about') {
             changeColors({background: "#3bf6d4", color: "#6B7176", hover: "#000"})
         } else if (currentPath === '/projects') {
@@ -88,6 +88,7 @@ const Nav = () => {
 };
 
 const StyledNav = styled(motion.nav)`
+  width: 100%;
   height: 5vh;
   display: flex;
   justify-content: space-between;

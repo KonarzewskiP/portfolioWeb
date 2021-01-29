@@ -21,7 +21,8 @@ function App() {
         <div className="App">
 
             <GlobalStyle/>
-            <AnimatePresence exitBeforeEnter>
+            {/*<AnimatePresence exitBeforeEnter>*/}
+            <AnimatePresence >
                 <ScrollToTop/>
             <Switch location={location} key={location.pathname}>
                 <Route path="/" exact>

@@ -28,14 +28,18 @@ const Projects = () => {
 };
 
 const StyledProjects = styled(motion.div)`
-  //min-height: 100vh;
-  align-items: center;
-  //justify-content: space-between;
-  padding: 5rem 0;
+  height: 100%;
+  padding: 5rem 2rem;
   color: #fff;
   background: #1E1E1E;
   margin-top: -5vh;
-  
+
+  @media (max-width: 1100px) {
+    padding: 5rem 1rem;
+  }
+  @media (max-width: 800px) {
+    padding: 5rem 0;
+  }
 
   h2 {
     @media (min-width: 1100px) {

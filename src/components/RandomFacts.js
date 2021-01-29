@@ -6,9 +6,9 @@ const RandomFacts = () => {
         <StyledRandomFacts>
             <RandomFact>
                 <h4>3 random facts about me:</h4>
-                <p>1. I used to dance professionally for four years and once the team I was on won Polish Championship.</p>
-                <p>2. When I was younger, I wanted to become a professional skateboarder. In fact, I used to skate for 6 years.</p>
-                <p>3. In my free time, I am learning to play the bass guitar, I enjoy reading books and I train boxing.</p>
+                <p><b>1.</b> When I was younger, I wanted to become a professional skateboarder. In fact, I used to skate for 6 years.</p>
+                <p><b>2.</b> In my free time, I am learning to play the bass guitar, and I enjoy reading books and I train boxing.</p>
+                <p><b>3.</b> I used to dance professionally for four years and once the team I was on won Polish Championship.</p>
             </RandomFact>
         </StyledRandomFacts>
     );
@@ -19,6 +19,7 @@ const StyledRandomFacts = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
+
 
   h4 {
     padding-bottom: 2rem;
@@ -37,19 +38,19 @@ const StyledRandomFacts = styled.div`
       font-size: 1.7rem;
     }
     @media (max-width: 800px) {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       line-height: 2rem;
     }
   }
 `
 
 const RandomFact = styled.div`
-  width: 1000px;
+  width:60%;
   @media (max-width: 1100px) {
-    width: 700px;
+    width:70%;
   }
   @media (max-width: 800px) {
-    width: 460px;
+    width: 90%;
   }
 `
 

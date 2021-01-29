@@ -78,9 +78,9 @@ const ExperienceSection = () => {
                         </div>
                     </Icon>
 
-                <h3>To see my skills in action, check out my <Link to="/projects"  ><motion.span whileHover={{scale: 1.2,color: "#fff"}}>projects.</motion.span></Link></h3>
                 </Icons>
-                </TechnicalSkills>
+                <h3>To see my skills in action, check out my <Link to="/projects"  ><motion.span whileHover={{scale: 1.2,color: "#fff"}}>projects.</motion.span></Link></h3>
+            </TechnicalSkills>
         </StyledExperience>
     );
 };
@@ -111,39 +111,31 @@ const StyledExperience = styled.div`
 `
 
 const TechnicalSkills = styled.div`
+  width: 90%;
+  
   a {
     text-decoration: underline;
     color: #000;
+   
   }
 `
 const Icons = styled(motion.div)`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 1000px;
   
-  @media (max-width: 1100px) {
-    width: 700px;
-    margin: auto;
-  }
-  @media (max-width: 800px) {
-    width: 500px;
-    margin: auto;
-  }
-
   img {
     height: 100px;
     margin: 7px;
     @media (max-width: 800px) {
-      height: 80px;
+      height: 70px;
     }
   }
 `
 
 const Icon = styled.div`
   justify-content: center;
-  padding: 1rem;
-
+  padding: 0.7rem;
 `
 
 

@@ -19,65 +19,65 @@ const Contact = () => {
             <Nav/>
             <StyledContacts>
                 <h2>Contact</h2>
-                <StyledContact>
-                    <StyledContactInfo>
-                        <p>
-                            Feel free to send me an email
-                            <span> pawelkonarzewski13@gmail.com </span>or connect and message me on:
-                        </p>
-                        <a href="https://github.com/KonarzewskiP" target="_blank" rel="noreferrer"><img src={git} alt="git logo"/></a>
-                        <a href="https://www.linkedin.com/in/pawe%C5%82-konarzewski-181617194/" target="_blank" rel="noreferrer"><img src={linkedIn} alt="linked in logo"/></a>
-                    </StyledContactInfo>
-                </StyledContact>
-                <StyledContact>
-                    <StyledImage>
-                        <img src={image} alt="man behind computer"/>
-                    </StyledImage>
-                </StyledContact>
+                <StyledContactInfo>
+                    <p>
+                        Feel free to send me an email
+                        <span> pawelkonarzewski13@gmail.com </span>or connect and message me on:
+                    </p>
+                    <a href="https://github.com/KonarzewskiP" target="_blank" rel="noreferrer"><img src={git}
+                                                                                                    alt="git logo"/></a>
+                    <a href="https://www.linkedin.com/in/pawe%C5%82-konarzewski-181617194/" target="_blank"
+                       rel="noreferrer"><img src={linkedIn} alt="linked in logo"/></a>
+                </StyledContactInfo>
+                <StyledImage>
+                    <img src={image} alt="man behind computer"/>
+                </StyledImage>
             </StyledContacts>
         </motion.div>
     );
 };
 
 const StyledContacts = styled(motion.div)`
-  padding: 5rem 10rem;
+  height: 100%;
+  padding: 5rem 0;
   color: #565656;
   background: #e5e5e5;
   margin-top: -5vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   text-align: center;
+  align-items: center;
 
   h2 {
-    display: flex;
-    justify-content: center;
     color: #000000;
     @media (max-width: 1100px) {
       font-size: 3rem;
-      //padding-bottom: 3rem;
     }
   }
-
-`
-
-const StyledContact = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-`
-
-const StyledContactInfo = styled.div`
-  width: 600px;
-
   p {
     font-size: 2rem;
     padding: 2rem;
     @media (max-width: 800px) {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
+      padding: 1rem;
     }
   }
-
   a {
-    text-align: center;
-    margin: 3rem;
+    margin: 2.5rem;
+  }
+  span {
+    color: #000000;
+  }
+`
+
+const StyledContactInfo = styled.div`
+  width: 30%;
+  @media (max-width: 1100px) {
+    width: 70%;
+  }
+  @media (max-width: 800px) {
+    width: 90%;
   }
 
   img {
@@ -86,19 +86,18 @@ const StyledContactInfo = styled.div`
       height: 65px;
     }
   }
-
-  span {
-    color: #000000;
-    text-align: center;
-  }
 `
 
 const StyledImage = styled.div`
-  img {
-    height: 600px;
+  img{
+    width: 70%;
+    @media (max-width: 1100px) {
+      width: 80%;
+    }
     @media (max-width: 800px) {
-      height: 400px;
+      width: 90%;
     }
   }
+
 `
 export default Contact;

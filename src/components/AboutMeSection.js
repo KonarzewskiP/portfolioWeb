@@ -22,6 +22,7 @@ const AboutMeSection = () => {
 };
 
 const StyledAboutMe = styled.div`
+  
   text-align: center;
   display: flex;
   justify-content: center;
@@ -42,7 +43,6 @@ const StyledAboutMe = styled.div`
 
   p {
     line-height: 2.5rem;
-    text-align: left;
     font-weight: lighter;
     @media (max-width: 800px) {
       font-size: 1.5rem;
@@ -52,12 +52,12 @@ const StyledAboutMe = styled.div`
 `
 
 const StyledAbout = styled.div`
-  width: 1000px;
+  width:60%;
   @media (max-width: 1100px) {
-    width: 700px;
+    width:70%;
   }
   @media (max-width: 800px) {
-    width: 460px;
+    width: 90%;
   }
 `
 

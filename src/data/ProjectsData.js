@@ -36,7 +36,7 @@ const ProjectsData = () => {
             name: "Cryptocurrency Wallet",
             id: uuidv4(),
             description: "Cryptocurrency wallet is a final project of Java software development bootcamp. It fetches " +
-                "exchange rates from external API, consume JSON and enable registered users to buy or sell" +
+                "exchange rates from external API, consume JSON and enable registered users to buy or sell " +
                 "cryptocurrencies.",
             gitHubLink: "https://github.com/ProjektGrupowyJavalon3/Cryptocurrencywallet",
             technology: [

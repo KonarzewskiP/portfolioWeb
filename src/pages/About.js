@@ -26,16 +26,15 @@ const About = () => {
 };
 
 const AboutStyled = styled(motion.div)`
-  min-height: 100vh;
-  display: block;
+  //min-height: 100vh;
+  height: 100%;
+  //display: block;
   align-items: center;
   justify-content: space-between;
-  padding: 5rem 0;
+  padding: 3rem 0;
   background: #3bf6d4;
   background-size: cover;
   margin-top: -5vh;
-
-
 `
 
 export default About;
