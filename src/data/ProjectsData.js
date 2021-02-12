@@ -3,10 +3,12 @@ import {v4 as uuidv4} from 'uuid';
 import Crypto from "../img/projects/Cryptocurrency.png";
 import Cashpoint from "../img/projects/Cashpoint.png"
 import Portfolio from "../img/projects/Portfolio.png"
+import Rover from "../img/projects/MarsRover.png"
 
 const ProjectsData = () => {
     return [
-        {  name: "Portfolio Website",
+        {
+            name: "Portfolio Website",
             id: uuidv4(),
             description: "My portfolio website, which I build using React JS, Styled components and Framer " +
                 "Motion library. ",
@@ -19,6 +21,19 @@ const ProjectsData = () => {
             ],
             image: Portfolio,
 
+        },
+        {
+            name: "Mars Rover Photos",
+            id: uuidv4(),
+            description: "Mars Rover is Web Application that integrates with the NASA API. You can choose between 3 different" +
+                "Mars Rovers and check pictures from selected cameras and specific day",
+            gitHubLink: "https://github.com/KonarzewskiP/NasaRover",
+            technology: [
+                "HTML",
+                "Styled components",
+                "React JS",
+            ],
+            image: Rover,
         },
         {
             name: "Cashpoint",
