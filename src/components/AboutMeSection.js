@@ -12,9 +12,8 @@ const AboutMeSection = () => {
                 </p>
                 <br/>
                 <p>
-                    I possess highly-developed analytical and interpersonal skills, and I adapt to new conditions
-                    quickly and easily. I constantly develop my programming skills through online courses, tech blogs
-                    and private classes with a tutor. My aim is to become a professional developer and create fully usable and secure software.
+                    My goal is to join an open and collaborative team of software engineers, where I can continue to learn,
+                    challenge myself and contribute energy and knowledge to the success of the Company.
                 </p>
             </StyledAbout>
         </StyledAboutMe>
