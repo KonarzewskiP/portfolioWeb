@@ -6,9 +6,9 @@ const AboutMeSection = () => {
         <StyledAboutMe>
             <StyledAbout>
                 <h2>About me</h2>
-                <p> My name is Pawel, and I am a Junior Full Stack Developer based in London. I am currently looking
+                <p> My name is Pawel, and I am a Junior Software Developer based in London. I am currently looking
                     for a new career opportunity which allow me to fully utilise my knowledge and skills,
-                    and further grow and develop my programming abilities.
+                    and further grow and develop my programming skills.
                 </p>
                 <br/>
                 <p>

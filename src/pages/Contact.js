@@ -56,10 +56,10 @@ const StyledContacts = styled(motion.div)`
     }
   }
   p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 2rem;
     @media (max-width: 800px) {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       padding: 1rem;
     }
   }
@@ -81,9 +81,9 @@ const StyledContactInfo = styled.div`
   }
 
   img {
-    height: 75px;
+    height: 65px;
     @media (max-width: 800px) {
-      height: 65px;
+      height: 55px;
     }
   }
 `

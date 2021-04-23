@@ -10,7 +10,7 @@ import Nav from "../components/Nav";
 const MainPage = () => {
     const part1 = "Hi there, I'm ";
     const name = "Pawel Konarzewski. ";
-    const part2 = "Full stack developer. ";
+    const part2 = "Software developer. ";
     return (
         <motion.div variants={animateView} initial="hidden" animate="show" exit="hidden">
             <Nav/>
