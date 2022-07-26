@@ -1,45 +1,39 @@
 import React from 'react';
 //Global style
-import GlobalStyle from "./components/GlobalStyles";
+import GlobalStyle from "./assets/GlobalStyles";
 //Import Pages
-import MainPage from "./pages/MainPage";
-import About from "./pages/About";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
+import About from "./pages/about/index";
+import Projects from "./pages/projects/index";
+import Contact from "./pages/contact/index";
 //Router
 import {Switch, Route, useLocation} from 'react-router-dom';
 import {AnimatePresence} from "framer-motion";
-import ScrollToTop from "./components/ScrollToTop";
-//Animation
+import ScrollToTop from "./utils/ScrollToTop";
+import Home from "./pages/home";
+
 
 function App() {
     const location = useLocation();
-    //State
-
     return (
-
         <div className="App">
-
             <GlobalStyle/>
-            {/*<AnimatePresence exitBeforeEnter>*/}
-            <AnimatePresence >
+            <AnimatePresence>
                 <ScrollToTop/>
-            <Switch location={location} key={location.pathname}>
-                <Route path="/" exact>
-                    <MainPage/>
-                </Route>
-                <Route path="/about" exact>
-                    <About/>
-                </Route>
-                <Route path="/projects" exact>
-                    <Projects/>
-                </Route>
-                <Route path="/contact" exact>
-                    <Contact/>
-                </Route>
-            </Switch>
+                <Switch location={location} key={location.pathname}>
+                    <Route path="/" exact>
+                        <Home/>
+                    </Route>
+                    <Route path="/about" exact>
+                        <About/>
+                    </Route>
+                    <Route path="/projects" exact>
+                        <Projects/>
+                    </Route>
+                    <Route path="/contact" exact>
+                        <Contact/>
+                    </Route>
+                </Switch>
             </AnimatePresence>
-
         </div>
     );
 }

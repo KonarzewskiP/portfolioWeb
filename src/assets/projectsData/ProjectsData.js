@@ -20,7 +20,6 @@ const ProjectsData = () => {
                 "Framer Motion",
             ],
             image: Portfolio,
-
         },
         {
             name: "Mars Rover Photos",

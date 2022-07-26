@@ -1,24 +1,20 @@
 import React, {useState, useEffect} from 'react';
-import styled from "styled-components";
 import {Link, useLocation} from "react-router-dom";
 //Import Animations
 import {motion} from "framer-motion";
+import {Line, StyledNav} from "./Style";
 
-const Nav = () => {
+const NavBar = () => {
     const location = useLocation();
     const currentPath = location.pathname;
     const [colors, changeColors] = useState({});
     const [navSolid, setNavSolid] = useState(false);
 
     useEffect(() => {
-        if (currentPath === '/contact') {
-            changeColors({background: "#e5e5e5", color: "#6B7176", hover: "#000"})
-        } else if (currentPath === '/about') {
-            changeColors({background: "#3bf6d4", color: "#6B7176", hover: "#000"})
-        } else if (currentPath === '/projects') {
+        if (currentPath === '/projects') {
             changeColors({background: "#1E1E1E", color: "#c6c6c6", hover: "#ffffff"})
         } else {
-            changeColors({background: "#fff", color: "#6B7176", hover: "#000000"})
+            changeColors({background: "#E5E5E5", color: "#000000" , hover: "#15a775"})
         }
         // return colors;
     }, [currentPath]);
@@ -87,55 +83,4 @@ const Nav = () => {
     );
 };
 
-const StyledNav = styled(motion.nav)`
-  width: 100%;
-  height: 5vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 10rem;
-  background: transparent;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-
-  @media (max-width: 1100px) {
-    padding:  1rem 5rem;
-  }
-  @media (max-width: 800px) {
-   padding:  1rem 2rem;
-  }
-
-  ul {
-    display: flex;
-  }
-
-  li {
-    margin-left: 5rem;
-    position: relative;
-    @media (max-width: 1100px) {
-      margin-left: 4rem;
-    }
-    @media (max-width: 800px) {
-      margin-left: 2rem;
-    }
-  }
-
-  #logo {
-    font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-  }
-`
-const Line = styled(motion.div)`
-  height: 0.1rem;
-  width: 0;
-  position: absolute;
-  bottom: -10%;
-  left: -1%;
-  @media (max-width: 1300px) {
-    left: 0;
-  }
-`
-
-export default Nav;
+export default NavBar;

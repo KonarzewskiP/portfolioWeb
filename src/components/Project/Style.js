@@ -1,27 +1,7 @@
-import React from 'react';
 import styled from "styled-components";
-import gitLogo from '../img/git_small_1.png';
 import {motion} from "framer-motion";
 
-const ProjectComponent = ({project}) => {
-    return (
-        <StyledProject>
-            <StyledDescription>
-                <h4>{`${project.name}`}</h4>
-                <p>{`${project.description}`}</p>
-                <a href={project.gitHubLink} target="_blank" rel="noreferrer"><img src={gitLogo} alt="GitHub logo"/></a>
-            </StyledDescription>
-            <StyledImage>
-                <img src={project.image} alt="project"/>
-                <StyledOverlay whileHover={{opacity: 1}}>
-                    <h4>TECH USED:</h4>
-                    <p>{project.technology.join(", ")}</p>
-                </StyledOverlay>
-            </StyledImage>
-        </StyledProject>
-    );
-};
-const StyledProject = styled.div`
+export const StyledProject = styled.div`
   padding: 2rem 0;
   //width: 90%;
   display: flex;
@@ -62,7 +42,7 @@ const StyledProject = styled.div`
 
 `
 
-const StyledDescription = styled.div`
+export const StyledDescription = styled.div`
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -82,7 +62,7 @@ const StyledDescription = styled.div`
 
 
 `
-const StyledImage = styled.div`
+export const StyledImage = styled.div`
   //padding: 1rem;
   width: 50%;
   position: relative;
@@ -101,7 +81,7 @@ const StyledImage = styled.div`
   }
 `
 
-const StyledOverlay = styled(motion.div)`
+export const StyledOverlay = styled(motion.div)`
   position: absolute;
   top: 0;
   left: 0;
@@ -123,5 +103,3 @@ const StyledOverlay = styled(motion.div)`
     line-height: 3rem;
   }
 `
-
-export default ProjectComponent;
