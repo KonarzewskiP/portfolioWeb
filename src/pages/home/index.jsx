@@ -23,7 +23,7 @@ const Home = () => {
     };
 
     return (
-        <motion.div variants={animateView} initial="hidden" animate="show" exit="hidden">
+        <motion.div variants={animateView} initial="hidden" animate="show" >
             <NavBar/>
             <StyledAbout>
                 <StyledInfo>
@@ -33,6 +33,7 @@ const Home = () => {
                         <br/>
                         {splitWord(part2)}
                     </motion.h2>
+                    <br/>
                     <motion.p variants={animateTitle}>
                         To find more about me go to
                         <Link to="/about">

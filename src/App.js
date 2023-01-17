@@ -7,7 +7,6 @@ import Projects from "./pages/projects/index";
 import Contact from "./pages/contact/index";
 //Router
 import {Switch, Route, useLocation} from 'react-router-dom';
-import {AnimatePresence} from "framer-motion";
 import ScrollToTop from "./utils/ScrollToTop";
 import Home from "./pages/home";
 
@@ -17,7 +16,6 @@ function App() {
     return (
         <div className="App">
             <GlobalStyle/>
-            <AnimatePresence>
                 <ScrollToTop/>
                 <Switch location={location} key={location.pathname}>
                     <Route path="/" exact>
@@ -33,7 +31,6 @@ function App() {
                         <Contact/>
                     </Route>
                 </Switch>
-            </AnimatePresence>
         </div>
     );
 }

@@ -13,7 +13,8 @@ const Projects = () => {
     console.log(projects);
 
     return (
-        <motion.div variants={animateView} initial="start" animate="end" exit="start">
+        // <motion.div variants={animateView} initial="start" animate="end" exit="start">
+        <>
             <NavBar/>
             <StyledProjects>
                 <h2>Projects</h2>
@@ -21,7 +22,8 @@ const Projects = () => {
                     project => (<Project project={project} key={project.id}/>))
                 }
             </StyledProjects>
-        </motion.div>
+        </>
+        // </motion.div>
     );
 };
 
