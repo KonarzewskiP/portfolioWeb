@@ -12,6 +12,7 @@ export const StyledNav = styled(motion.nav)`
   position: sticky;
   top: 0;
   z-index: 10;
+  font-size: 1rem;
 
   @media (max-width: 1100px) {
     padding:  1rem 5rem;
