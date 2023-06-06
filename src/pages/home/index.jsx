@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 import {sentence, letter, animateView, animateTitle} from "../../animations";
 //Import Pages
 import NavBar from "../../components/NavBar/index";
-import {Container, Heading, Paragraph, StyledAbout, StyledInfo, StyledSpan} from "./Style";
+import {StyledAbout, StyledInfo, StyledSpan} from "./Style";
 
 const Home = () => {
     const part1 = "Hi there, I'm ";
