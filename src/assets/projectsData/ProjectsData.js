@@ -2,29 +2,34 @@ import {v4 as uuidv4} from 'uuid';
 //Import Images
 import Crypto from "../img/projects/Cryptocurrency.png";
 import Cashpoint from "../img/projects/Cashpoint.png"
-import Portfolio from "../img/projects/Portfolio.png"
 import Rover from "../img/projects/MarsRover.png"
+import BlackScreen from "../img/projects/BlackScreen.jpg"
 
 const ProjectsData = () => {
     return [
         {
-            name: "Portfolio Website",
+            name: "StorageSpace",
             id: uuidv4(),
-            description: "My portfolio website, which I build using React JS, Styled components and Framer " +
-                "Motion library. ",
-            gitHubLink: "https://github.com/KonarzewskiP/portfolioWeb",
+            description: "Storage Space is a REST application for renting storage space in " +
+                "different warehouses. It is built with Java and Spring Framework. " +
+                "It enables to reserve a storage room at the specific warehouse and " +
+                "receive a quotation for a chosen room.",
+            gitHubLink: "https://github.com/KonarzewskiP/StorageSpace",
             technology: [
-                "HTML",
-                "Styled components",
-                "React JS",
-                "Framer Motion",
+                "Spring Boot",
+                "Spring Security",
+                "Junit 5",
+                "Mockito",
+                "Java",
+                "MySQL",
+                "Docker"
             ],
-            image: Portfolio,
+            image: BlackScreen,
         },
         {
             name: "Mars Rover Photos",
             id: uuidv4(),
-            description: "Mars Rover is Web Application that integrates with the NASA API. You can choose between 3 different" +
+            description: "Mars Rover is Web Application that integrates with the NASA API. You can choose between 3 different " +
                 "Mars Rovers and check pictures from selected cameras and specific day",
             gitHubLink: "https://github.com/KonarzewskiP/NasaRover",
             technology: [

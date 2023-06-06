@@ -5,13 +5,12 @@ import {motion} from "framer-motion";
 import {sentence, letter, animateView, animateTitle} from "../../animations";
 //Import Pages
 import NavBar from "../../components/NavBar/index";
-import {StyledAbout, StyledInfo, StyledSpan} from "./Style";
+import {Container, Heading, Paragraph, StyledAbout, StyledInfo, StyledSpan} from "./Style";
 
 const Home = () => {
     const part1 = "Hi there, I'm ";
     const name = "Pawel Konarzewski. ";
     const part2 = "Software developer. ";
-
     const splitWord = (str, color) => {
         return str.split("").map((char, index) => {
             return (

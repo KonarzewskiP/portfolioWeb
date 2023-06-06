@@ -17,7 +17,6 @@ const Projects = () => {
         <>
             <NavBar/>
             <StyledProjects>
-                <h2>Projects</h2>
                 {projects.map(
                     project => (<Project project={project} key={project.id}/>))
                 }

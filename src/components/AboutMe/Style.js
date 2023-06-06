@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 export const StyledAboutMe = styled.div`
   text-align: center;
@@ -29,12 +29,40 @@ export const StyledAboutMe = styled.div`
   }
 `
 
-export const StyledAbout = styled.div`
-  width:60%;
-  @media (max-width: 1100px) {
-    width:70%;
+export const Container = styled.section`
+  padding: 6rem 6rem 8rem;
+  margin: 0 auto;
+  max-width: 80rem;
+
+  @media (max-width: 1430px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 1150px) {
+    font-size: 1.3rem;
   }
   @media (max-width: 800px) {
-    width: 90%;
+    font-size: 1.1rem;
+    padding-right: 2rem;
   }
-`
+`;
+
+export const Paragraph = styled.p`
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+`;
+
+export const Heading = styled.h1`
+  font-size: 3.2rem;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 1.5em;
+  max-width: 30ch;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 1100px) {
+    width:50%;
+  }
+
+`;
